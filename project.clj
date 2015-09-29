@@ -9,4 +9,5 @@
                  [clj-time "0.11.0"]
                  [org.xerial/sqlite-jdbc "3.7.2"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [org.clojure/java.jdbc "0.4.2"]])
+                 [org.clojure/java.jdbc "0.4.2"]]
+  :main clj-sqlite-test.core)

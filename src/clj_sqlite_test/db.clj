@@ -58,9 +58,7 @@
 (with-handler! #'init-db
                java.lang.Exception
                (fn [e & args]
-                 (log/warn "init-db: " e)
-                 (delete-db)
-                 :recreate))
+                 (log/warn "init-db: " e)))
 
 (with-handler! #'jdbc/insert!
                java.lang.Exception
