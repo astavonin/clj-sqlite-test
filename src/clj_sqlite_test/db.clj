@@ -58,12 +58,12 @@
 (with-handler! #'init-db
                java.lang.Exception
                (fn [e & args]
-                 (log/warn "init-db: " e)))
+                 (log/warn "init-db: " (.getMessage e))))
 
 (with-handler! #'jdbc/insert!
                java.lang.Exception
                (fn [e & args]
-                 (log/warn "insertetion error: " e)))
+                 (log/warn "insertetion error: " (.getMessage e))))
 
 (with-handler! #'jdbc/update!
                java.lang.Exception

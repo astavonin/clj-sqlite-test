@@ -1,6 +1,7 @@
 (ns clj-sqlite-test.core
-  (:require [clj-sqlite-test.db :as db])
-  )
+  (:require [clj-sqlite-test.db :as db]
+            [clojure.tools.logging :as log])
+  (:gen-class))
 
 
 (defn -main [& args]
